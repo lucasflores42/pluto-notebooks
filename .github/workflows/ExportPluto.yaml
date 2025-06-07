@@ -47,6 +47,8 @@ jobs:
 
             - name: Run & export Pluto notebooks
               run: |
+                mv exported/* .
+                rm -rf exported pluto_state_cache
                 julia -e 'using Pkg
                   Pkg.activate(mktempdir())
                   Pkg.add([
