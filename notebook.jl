@@ -1,19 +1,17 @@
 ### A Pluto.jl notebook ###
-# v0.20.8
+# v0.19.47
 
 using Markdown
 using InteractiveUtils
 
 # This Pluto notebook uses @bind for interactivity. When running this notebook outside of Pluto, the following 'mock version' of @bind gives bound variables a default value (instead of an error).
 macro bind(def, element)
-    #! format: off
-    return quote
+    quote
         local iv = try Base.loaded_modules[Base.PkgId(Base.UUID("6e696c72-6542-2067-7265-42206c756150"), "AbstractPlutoDingetjes")].Bonds.initial_value catch; b -> missing; end
         local el = $(esc(element))
         global $(esc(def)) = Core.applicable(Base.get, el) ? Base.get(el) : iv(el)
         el
     end
-    #! format: on
 end
 
 # ╔═╡ b8c29048-42b1-11f0-1c96-c14f564c60ad
@@ -45,9 +43,9 @@ end
 
 # ╔═╡ 2fefa8a2-844b-4569-b9e5-93df5bf463a2
 begin
-    β₀_slider = @bind β₀ Slider(10:1:50, default=50, show_value=true)
-    β₁_slider = @bind β₁ Slider(0:1:50, default=50, show_value=true)
-    τₐ_slider = @bind τₐ Slider(0.0:0.1:4.0, default=0.0, show_value=true)
+    β₀_slider = @bind β₀ Slider(10:10:50, default=50, show_value=true)
+    β₁_slider = @bind β₁ Slider(0:10:50, default=50, show_value=true)
+    τₐ_slider = @bind τₐ Slider(0.0:0.5:4.0, default=0.0, show_value=true)
     
     md"""
     **Model Parameters**
@@ -63,7 +61,7 @@ begin
     # initial conditions
     x0 = 0.99
     initial = [x0, 1-x0, 0]
-    tspan = (0.0, 300.0)
+    tspan = (0.0, 132.0)
 	
 	# fixed parameters
     c, ξ, p2, μ, γ, δ = 52/6, 9, 0.5, 10^-7, 52/6, 8/12
@@ -2495,10 +2493,10 @@ version = "1.8.1+0"
 """
 
 # ╔═╡ Cell order:
-# ╟─b8c29048-42b1-11f0-1c96-c14f564c60ad
-# ╟─febb9a96-6011-4f54-8a3b-01f76be3e222
-# ╟─5f42f0c2-c206-4dd9-af25-bb3785806712
+# ╠═b8c29048-42b1-11f0-1c96-c14f564c60ad
+# ╠═febb9a96-6011-4f54-8a3b-01f76be3e222
+# ╠═5f42f0c2-c206-4dd9-af25-bb3785806712
 # ╟─2fefa8a2-844b-4569-b9e5-93df5bf463a2
-# ╟─73204bea-b539-4981-8a74-3a8d1693df0f
+# ╠═73204bea-b539-4981-8a74-3a8d1693df0f
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
