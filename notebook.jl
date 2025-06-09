@@ -24,7 +24,9 @@ md"""
 
 # ╔═╡ 3be1939d-c75b-4e1c-a07f-1475f5e8ba56
 md"""
-This is a post related to the paper from my internship in the Max Planck for Evolutionary Biology (doi.org/10.1038/s44260-025-00035-1). From a colaboration with Amanda de Azevedo-Lopes, Chadi M. Saad-Roy and Arne Traulsen, we explored a SIRS model coupled with individual decision-making, showing social dilemmasoccuringseasonaly.
+This is a post related to the paper from my internship in the Max Planck for Evolutionary Biology (doi.org/10.1038/s44260-025-00035-1), a colaboration with Amanda de Azevedo-Lopes, Chadi M. Saad-Roy, and Arne Traulsen.
+
+We investigated the interplay between disease dynamics and human behavior by coupling a classic SIRS epidemiological model with individual decision-making, revealing that adherence to NPIs among individuals fluctuate seasonally in response to the infection, leading to cyclical social dilemmas.
 """
 
 # ╔═╡ 83098e03-38a0-4ff2-a4a1-8739b3a65ab0
@@ -70,7 +72,7 @@ md"""
 
 # ╔═╡ 2efc9ddd-b53d-46c3-aa61-67aefc7fdad3
 md"""
-There are different ways that indiviiduals can act to decrease the transmission rate of an infection, like pharmaceutical interventions, via vaccination, or non-pharmaceutical intervention (NPIs), via social distancing or wearing masks, for example.
+There are different ways that individuals can act to decrease the transmission rate of an infection, like pharmaceutical interventions, via vaccination, or non-pharmaceutical intervention (NPIs), via social distancing or wearing masks, for example.
 
 We will focus on the latter, by defining a social game with the payoff matrix
 """
