@@ -154,8 +154,8 @@ md"""
 
 # ╔═╡ c2430ebb-fcee-433e-a380-b1d8ddb30732
 begin
-	image = load("sir.png")
-	#imresize(image, ratio=0.9) 
+    image_url = "https://raw.githubusercontent.com/lucasflores42/pluto-notebooks/main/sir.png"
+    image = load(download(image_url))
 end
 
 # ╔═╡ 287ca530-4473-4d4c-a155-cbc02bdde48f
