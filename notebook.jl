@@ -180,10 +180,10 @@ end
 md"""
 | Parameter                | Symbol          | Value         |
 |:-------------------------|:---------------|:--------------|
-| Recovery rate            | $\gamma$       | $\approx 8.67$ per month (2 per week)|
-| Waning immunity          | $\delta$       | $\approx 0.67$ per month (0.15 per week)|
+| Recovery rate            | $\gamma$       | $8.67$ per month (2 per week)|
+| Waning immunity          | $\delta$       | $0.67$ per month (0.15 per week)|
 | Switching rate           | $\mu$          | $10^{-7}$      per month|
-| Cost of adherence        | $c$            | $\approx 8.67$ per month|
+| Cost of adherence        | $c$            | $8.67$ per month|
 | Risk perception          | $\xi$          | $9$           |
 | Adherence effectiveness  | $p$            | $0.5$         |
 """
